@@ -65,8 +65,13 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
   color: #bb8f5f;
 }
 
-.syntax--variable, .syntax--support.syntax--constant.syntax--property-value.syntax--css {
+.syntax--variable, .syntax--support.syntax--constant.syntax--property-value.syntax--css,
+.syntax--string .syntax--embedded {
   color: #a68b3a;
+}
+
+.syntax--string .syntax--embedded .syntax--punctuation {
+  color: @syntax-text-color;
 }
 
 .syntax--keyword, .syntax--support.syntax--type.syntax--property-name, .syntax--meta.syntax--property-name, .syntax--support.syntax--type.syntax--vendored.syntax--property-name {
